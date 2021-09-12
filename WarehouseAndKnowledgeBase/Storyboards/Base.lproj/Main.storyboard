@@ -8,26 +8,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar View Controller-->
+        <!--Servicedesk gang-->
         <scene sceneID="QUf-Gj-51L">
             <objects>
                 <tabBarController id="99d-Z9-t1a" customClass="TabBarViewController" customModule="WarehouseAndKnowledgeBase" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="EEK-Ck-TgA"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Bc-cc-Vie">
+                    <navigationItem key="navigationItem" title="Servicedesk gang" id="EEK-Ck-TgA"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="1Bc-cc-Vie">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemBlueColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="cuf-bI-owp" kind="relationship" relationship="viewControllers" id="fFB-Nm-EK7"/>
                         <segue destination="eyz-XY-5d2" kind="relationship" relationship="viewControllers" id="f0d-Yf-MXj"/>
+                        <segue destination="qOZ-8V-py5" kind="relationship" relationship="viewControllers" id="Z0a-We-A3B"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsm-hB-8hH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-280" y="-516"/>
         </scene>
-        <!--Item-->
+        <!--База знаний-->
         <scene sceneID="DG5-Fv-7Ek">
             <objects>
                 <tableViewController id="eyz-XY-5d2" customClass="KBListTableViewController" customModule="WarehouseAndKnowledgeBase" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,11 +55,58 @@
                             <outlet property="delegate" destination="eyz-XY-5d2" id="Utl-aX-85x"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="6CC-2Y-xo1"/>
+                    <tabBarItem key="tabBarItem" title="База знаний" image="book.fill" catalog="system" id="6CC-2Y-xo1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bae-nh-R2X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="-176"/>
+            <point key="canvasLocation" x="690" y="-516"/>
+        </scene>
+        <!--Контакты-->
+        <scene sceneID="KQN-wr-STv">
+            <objects>
+                <tableViewController id="qOZ-8V-py5" customClass="ContactsListTableViewController" customModule="WarehouseAndKnowledgeBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wQC-Ah-8Iz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="g8t-LZ-3kR">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g8t-LZ-3kR" id="Q0I-7h-AkO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="dsH-Qv-vCp" kind="presentation" id="pNi-jq-3JI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qOZ-8V-py5" id="r3M-iJ-adq"/>
+                            <outlet property="delegate" destination="qOZ-8V-py5" id="mBn-fz-iMy"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Контакты" image="phone.circle.fill" catalog="system" id="4ED-n9-n34"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5h-2O-RdK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="190"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ge3-7y-gW9">
+            <objects>
+                <viewController id="dsH-Qv-vCp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xCi-3c-Ppg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZX7-wM-qG3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7G-Qc-eoM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464" y="190"/>
         </scene>
         <!--Warehouse Detailed View Controller-->
         <scene sceneID="qwT-qB-dNm">
@@ -73,15 +122,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vS-sh-jLd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="-859"/>
+            <point key="canvasLocation" x="1464" y="-1212"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ISL-n1-rEJ">
             <objects>
                 <navigationController id="nFr-2v-WUd" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7J9-ut-bgm">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7J9-ut-bgm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemBlueColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="0.0"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <color key="textColor" systemColor="systemBlueColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="99d-Z9-t1a" kind="relationship" relationship="rootViewController" id="DFs-T4-Nft"/>
@@ -91,7 +148,7 @@
             </objects>
             <point key="canvasLocation" x="-1025" y="-515"/>
         </scene>
-        <!--Item-->
+        <!--Склад-->
         <scene sceneID="md9-j7-GSr">
             <objects>
                 <tableViewController id="cuf-bI-owp" customClass="WarehouseListTableViewController" customModule="WarehouseAndKnowledgeBase" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,11 +174,13 @@
                             <outlet property="delegate" destination="cuf-bI-owp" id="VrC-Ux-nft"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="ddD-RZ-ftS"/>
+                    <tabBarItem key="tabBarItem" title="Склад" image="cube.box.fill" catalog="system" id="ddD-RZ-ftS">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQy-a5-GOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="-859"/>
+            <point key="canvasLocation" x="690" y="-1212"/>
         </scene>
         <!--Articles View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -137,12 +196,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1464" y="-176"/>
+            <point key="canvasLocation" x="1464" y="-516"/>
         </scene>
     </scenes>
     <resources>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="cube.box.fill" catalog="system" width="128" height="124"/>
+        <image name="phone.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

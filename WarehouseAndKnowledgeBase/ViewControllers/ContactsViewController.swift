@@ -1,5 +1,5 @@
 //
-//  TabBarViewController.swift
+//  ContactsViewController.swift
 //  WarehouseAndKnowledgeBase
 //
 //  Created by Ravil on 12.09.2021.
@@ -7,14 +7,12 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+class ContactsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tabBar.backgroundColor = #colorLiteral(red: 0.01773617603, green: 0.3761797547, blue: 0.6635038257, alpha: 1)
-        tabBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        tabBar.unselectedItemTintColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+
+        // Do any additional setup after loading the view.
     }
     
 
