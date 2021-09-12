@@ -19,7 +19,8 @@
 		F1E71EC126EE7371009943DB /* WarehouseListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EC026EE7371009943DB /* WarehouseListTableViewController.swift */; };
 		F1E71EC326EE73B4009943DB /* WarehouseDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EC226EE73B4009943DB /* WarehouseDetailedViewController.swift */; };
 		F1E71EC526EE7B65009943DB /* ContactsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EC426EE7B65009943DB /* ContactsListTableViewController.swift */; };
-		F1E71EC726EE8510009943DB /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EC626EE8510009943DB /* ContactsViewController.swift */; };
+		F1E71EC726EE8510009943DB /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EC626EE8510009943DB /* ContactViewController.swift */; };
+		F1E71EC926EE8723009943DB /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EC826EE8723009943DB /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,8 @@
 		F1E71EC026EE7371009943DB /* WarehouseListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseListTableViewController.swift; sourceTree = "<group>"; };
 		F1E71EC226EE73B4009943DB /* WarehouseDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseDetailedViewController.swift; sourceTree = "<group>"; };
 		F1E71EC426EE7B65009943DB /* ContactsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTableViewController.swift; sourceTree = "<group>"; };
-		F1E71EC626EE8510009943DB /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		F1E71EC626EE8510009943DB /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		F1E71EC826EE8723009943DB /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +74,9 @@
 			children = (
 				F1E71EB926EE5AEE009943DB /* Services */,
 				F1E71EB826EE5A83009943DB /* Models */,
-				F1E71EB426EE5A48009943DB /* App */,
 				F1E71EB526EE5A51009943DB /* ViewControllers */,
 				F1E71EB726EE5A78009943DB /* Storyboards */,
+				F1E71EB426EE5A48009943DB /* App */,
 				F1E71EB626EE5A5C009943DB /* Resources */,
 			);
 			path = WarehouseAndKnowledgeBase;
@@ -99,7 +101,7 @@
 				F1E71EBC26EE729C009943DB /* KBListTableViewController.swift */,
 				F1E71EA426EE5979009943DB /* KBArticlesViewController.swift */,
 				F1E71EC426EE7B65009943DB /* ContactsListTableViewController.swift */,
-				F1E71EC626EE8510009943DB /* ContactsViewController.swift */,
+				F1E71EC626EE8510009943DB /* ContactViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -124,6 +126,7 @@
 		F1E71EB826EE5A83009943DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F1E71EC826EE8723009943DB /* Contact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,10 +215,11 @@
 				F1E71EBB26EE5AFC009943DB /* DataManager.swift in Sources */,
 				F1E71EA126EE5979009943DB /* AppDelegate.swift in Sources */,
 				F1E71EBF26EE7313009943DB /* TabBarViewController.swift in Sources */,
+				F1E71EC926EE8723009943DB /* Contact.swift in Sources */,
 				F1E71EC326EE73B4009943DB /* WarehouseDetailedViewController.swift in Sources */,
 				F1E71EA326EE5979009943DB /* SceneDelegate.swift in Sources */,
 				F1E71EC526EE7B65009943DB /* ContactsListTableViewController.swift in Sources */,
-				F1E71EC726EE8510009943DB /* ContactsViewController.swift in Sources */,
+				F1E71EC726EE8510009943DB /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
