@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		F1E71EA126EE5979009943DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EA026EE5979009943DB /* AppDelegate.swift */; };
 		F1E71EA326EE5979009943DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EA226EE5979009943DB /* SceneDelegate.swift */; };
-		F1E71EA526EE5979009943DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EA426EE5979009943DB /* ViewController.swift */; };
+		F1E71EA526EE5979009943DB /* KBArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EA426EE5979009943DB /* KBArticlesViewController.swift */; };
 		F1E71EA826EE5979009943DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E71EA626EE5979009943DB /* Main.storyboard */; };
 		F1E71EAA26EE597B009943DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E71EA926EE597B009943DB /* Assets.xcassets */; };
 		F1E71EAD26EE597B009943DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E71EAB26EE597B009943DB /* LaunchScreen.storyboard */; };
 		F1E71EBB26EE5AFC009943DB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EBA26EE5AFC009943DB /* DataManager.swift */; };
+		F1E71EBD26EE729C009943DB /* KBListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EBC26EE729C009943DB /* KBListTableViewController.swift */; };
+		F1E71EBF26EE7313009943DB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EBE26EE7313009943DB /* TabBarViewController.swift */; };
+		F1E71EC126EE7371009943DB /* WarehouseListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EC026EE7371009943DB /* WarehouseListTableViewController.swift */; };
+		F1E71EC326EE73B4009943DB /* WarehouseDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EC226EE73B4009943DB /* WarehouseDetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1E71E9D26EE5979009943DB /* WarehouseAndKnowledgeBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarehouseAndKnowledgeBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E71EA026EE5979009943DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E71EA226EE5979009943DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1E71EA426EE5979009943DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1E71EA426EE5979009943DB /* KBArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBArticlesViewController.swift; sourceTree = "<group>"; };
 		F1E71EA726EE5979009943DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1E71EA926EE597B009943DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E71EAC26EE597B009943DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E71EAE26EE597B009943DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1E71EBA26EE5AFC009943DB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F1E71EBC26EE729C009943DB /* KBListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBListTableViewController.swift; sourceTree = "<group>"; };
+		F1E71EBE26EE7313009943DB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F1E71EC026EE7371009943DB /* WarehouseListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseListTableViewController.swift; sourceTree = "<group>"; };
+		F1E71EC226EE73B4009943DB /* WarehouseDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseDetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +89,11 @@
 		F1E71EB526EE5A51009943DB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F1E71EA426EE5979009943DB /* ViewController.swift */,
+				F1E71EBE26EE7313009943DB /* TabBarViewController.swift */,
+				F1E71EC026EE7371009943DB /* WarehouseListTableViewController.swift */,
+				F1E71EC226EE73B4009943DB /* WarehouseDetailedViewController.swift */,
+				F1E71EBC26EE729C009943DB /* KBListTableViewController.swift */,
+				F1E71EA426EE5979009943DB /* KBArticlesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,9 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E71EA526EE5979009943DB /* ViewController.swift in Sources */,
+				F1E71EC126EE7371009943DB /* WarehouseListTableViewController.swift in Sources */,
+				F1E71EBD26EE729C009943DB /* KBListTableViewController.swift in Sources */,
+				F1E71EA526EE5979009943DB /* KBArticlesViewController.swift in Sources */,
 				F1E71EBB26EE5AFC009943DB /* DataManager.swift in Sources */,
 				F1E71EA126EE5979009943DB /* AppDelegate.swift in Sources */,
+				F1E71EBF26EE7313009943DB /* TabBarViewController.swift in Sources */,
+				F1E71EC326EE73B4009943DB /* WarehouseDetailedViewController.swift in Sources */,
 				F1E71EA326EE5979009943DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RR2792TYH2;
-				INFOPLIST_FILE = WarehouseAndKnowledgeBase/Info.plist;
+				INFOPLIST_FILE = WarehouseAndKnowledgeBase/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RR2792TYH2;
-				INFOPLIST_FILE = WarehouseAndKnowledgeBase/Info.plist;
+				INFOPLIST_FILE = WarehouseAndKnowledgeBase/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
