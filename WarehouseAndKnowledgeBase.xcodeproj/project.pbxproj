@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1DD97392729924000AEAA35 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD97382729924000AEAA35 /* Item.swift */; };
 		F1E71EA126EE5979009943DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EA026EE5979009943DB /* AppDelegate.swift */; };
 		F1E71EA326EE5979009943DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EA226EE5979009943DB /* SceneDelegate.swift */; };
 		F1E71EA526EE5979009943DB /* KBArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71EA426EE5979009943DB /* KBArticlesViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1DD97382729924000AEAA35 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F1E71E9D26EE5979009943DB /* WarehouseAndKnowledgeBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarehouseAndKnowledgeBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E71EA026EE5979009943DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E71EA226EE5979009943DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				F1E71EC826EE8723009943DB /* Contact.swift */,
+				F1DD97382729924000AEAA35 /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				F1E71EBD26EE729C009943DB /* KBListTableViewController.swift in Sources */,
 				F1E71EA526EE5979009943DB /* KBArticlesViewController.swift in Sources */,
 				F1E71EBB26EE5AFC009943DB /* DataManager.swift in Sources */,
+				F1DD97392729924000AEAA35 /* Item.swift in Sources */,
 				F1E71EA126EE5979009943DB /* AppDelegate.swift in Sources */,
 				F1E71EBF26EE7313009943DB /* TabBarViewController.swift in Sources */,
 				F1E71EC926EE8723009943DB /* Contact.swift in Sources */,
