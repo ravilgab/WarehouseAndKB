@@ -9,8 +9,8 @@ import Foundation
 
 struct Item {
     let title: String
-    let quantityInStock: Int
-    let quantityNormaly: Int
+    var quantityInStock: Int
+    var quantityNormaly: Int
 }
 
 extension Item {
