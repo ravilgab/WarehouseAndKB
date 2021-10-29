@@ -8,22 +8,24 @@
 import UIKit
 
 class WarehouseDetailedViewController: UIViewController {
-
+    
+    @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var itemTitleLabel: UILabel!
+    @IBOutlet weak var itemsInStockTF: UITextField!
+    @IBOutlet weak var itemsQuantityNormallyTF: UITextField!
+    
+    var item: Item!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        itemImageView.image = UIImage(named: item.title)
+        itemImageView.layer.cornerRadius = 15
+        itemTitleLabel.text = item.title
+        itemsInStockTF.text = "\(item.quantityInStock)"
+        itemsQuantityNormallyTF.text = "\(item.quantityNormaly)"
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

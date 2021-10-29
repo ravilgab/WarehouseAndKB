@@ -13,6 +13,9 @@ class WarehouseListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.rowHeight = 80
+        
     }
 
     // MARK: - Table view data source
@@ -31,7 +34,16 @@ class WarehouseListTableViewController: UITableViewController {
 //        cell.detailTextLabel?.text = "\(item.quantityInStock)"
         content.text = item.title
         content.secondaryText = "\(item.quantityInStock)"
-
+        content.secondaryTextProperties.font = .boldSystemFont(ofSize: 16)
+        content.image = UIImage(named: item.title)
+        content.imageProperties.cornerRadius = 14
+        
+        if item.quantityInStock == 0 {
+            content.secondaryTextProperties.color = .red
+        } else if item.quantityInStock <= item.quantityNormaly / 3 {
+            content.secondaryTextProperties.color = .orange
+        }
+        
         cell.contentConfiguration = content
         
         return cell
@@ -72,14 +84,17 @@ class WarehouseListTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let warehouseDetailedVC = segue.destination as? WarehouseDetailedViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let item = items[indexPath.row]
+        
+        warehouseDetailedVC.item = item
     }
-    */
+    
 
 }
