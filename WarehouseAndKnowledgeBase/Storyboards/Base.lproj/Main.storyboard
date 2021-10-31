@@ -228,7 +228,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxP-5y-sIn">
-                                <rect key="frame" x="139.5" y="620" width="96.5" height="31"/>
+                                <rect key="frame" x="16" y="620" width="343" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Сохранить"/>
                                 <connections>
@@ -241,9 +241,11 @@
                         <constraints>
                             <constraint firstItem="dxP-5y-sIn" firstAttribute="centerX" secondItem="2lS-zU-IYg" secondAttribute="centerX" id="9Kq-0t-Rm5"/>
                             <constraint firstItem="W4t-Jm-okw" firstAttribute="top" secondItem="2lS-zU-IYg" secondAttribute="top" constant="100" id="C5f-ml-DzN"/>
+                            <constraint firstItem="dxP-5y-sIn" firstAttribute="leading" secondItem="7GD-AD-ZIK" secondAttribute="leading" constant="16" id="FcA-W3-Rft"/>
                             <constraint firstItem="W4t-Jm-okw" firstAttribute="leading" secondItem="7GD-AD-ZIK" secondAttribute="leading" constant="16" id="R80-EO-BfI"/>
                             <constraint firstItem="7GD-AD-ZIK" firstAttribute="bottom" secondItem="dxP-5y-sIn" secondAttribute="bottom" constant="16" id="nUG-3y-d9l"/>
                             <constraint firstItem="7GD-AD-ZIK" firstAttribute="trailing" secondItem="W4t-Jm-okw" secondAttribute="trailing" constant="16" id="qiC-TI-dnK"/>
+                            <constraint firstItem="7GD-AD-ZIK" firstAttribute="trailing" secondItem="dxP-5y-sIn" secondAttribute="trailing" constant="16" id="rQ0-wN-bLM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zTW-M7-UMk"/>
@@ -254,6 +256,7 @@
                         <outlet property="itemTitleLabel" destination="wgs-h9-dYU" id="meU-Ij-5RZ"/>
                         <outlet property="itemsInStockTF" destination="cym-z6-kqy" id="9rI-3o-j31"/>
                         <outlet property="itemsQuantityNormallyTF" destination="7i9-BE-1zE" id="IH3-LD-ELH"/>
+                        <outlet property="saveButton" destination="dxP-5y-sIn" id="QWc-px-5ma"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vS-sh-jLd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -267,6 +270,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7J9-ut-bgm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.16089436409999999" green="0.3712173104" blue="0.64361447100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.16089436409999999" green="0.3712173104" blue="0.64361447100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="italicSystem" pointSize="0.0"/>

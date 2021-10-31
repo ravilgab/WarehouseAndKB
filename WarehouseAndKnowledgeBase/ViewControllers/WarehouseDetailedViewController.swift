@@ -18,6 +18,8 @@ class WarehouseDetailedViewController: UIViewController {
     @IBOutlet weak var itemInStockStepper: UIStepper!
     @IBOutlet weak var itemQuantityNormallyStepper: UIStepper!
     
+    @IBOutlet weak var saveButton: UIButton!
+    
     var item: Item!
     
     override func viewDidLoad() {
@@ -31,6 +33,13 @@ class WarehouseDetailedViewController: UIViewController {
         
         itemInStockStepper.value = Double(item.quantityInStock)
         itemQuantityNormallyStepper.value = Double(item.quantityNormaly)
+        
+        saveButton.tintColor = #colorLiteral(red: 0.01773617603, green: 0.3761797547, blue: 0.6635038257, alpha: 1)
+        
+//        let swipeBackRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipeBackGesture))
+//        swipeBackRecognizer.direction = .down
+//        // swipeBackRecognizer.cancelsTouchesInView = false
+//        view.addGestureRecognizer(swipeBackRecognizer)
     }
     
     @IBAction func itemInStockStepper(_ sender: UIStepper) {
@@ -42,8 +51,12 @@ class WarehouseDetailedViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
-
+        
     }
     
+//    @objc func handleSwipeBackGesture(sender: UISwipeGestureRecognizer) {
+//        dismiss(animated: true, completion: nil)
+//        print("swipe")
+//    }
     
 }

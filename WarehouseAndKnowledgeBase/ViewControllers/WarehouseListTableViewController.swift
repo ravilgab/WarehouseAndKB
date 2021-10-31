@@ -45,6 +45,8 @@ class WarehouseListTableViewController: UITableViewController {
         }
         
         cell.contentConfiguration = content
+//        cell.layer.borderWidth = 2
+//        //cell.layer.borderColor =
         
         return cell
     }
