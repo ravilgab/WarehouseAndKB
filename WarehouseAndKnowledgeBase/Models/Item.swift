@@ -31,7 +31,6 @@ extension Item {
             Item(title: "Беспроводной комплект HP", quantityInStock: 46, quantityNormaly: 40),
             Item(title: "Монитор HP e240 (старый)", quantityInStock: 34, quantityNormaly: 20),
             Item(title: "Монитор HP e243 (новый)", quantityInStock: 2, quantityNormaly: 20),
-            
             Item(title: "Мышка HP travel mouse", quantityInStock: 77, quantityNormaly: 100),
             Item(title: "Мышка Logitech m590", quantityInStock: 65, quantityNormaly: 100),
             Item(title: "Чехол для iPad Air 2", quantityInStock: 0, quantityNormaly: 30),

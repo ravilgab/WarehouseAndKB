@@ -11,11 +11,16 @@ class WarehouseListTableViewController: UITableViewController {
 
     private var items = Item.getItemData()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        animateTableView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = 80
-        
     }
 
     // MARK: - Table view data source
@@ -30,8 +35,6 @@ class WarehouseListTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         let item = items[indexPath.row]
         
-//        cell.textLabel?.text = item.title
-//        cell.detailTextLabel?.text = "\(item.quantityInStock)"
         content.text = item.title
         content.secondaryText = "\(item.quantityInStock)"
         content.secondaryTextProperties.font = .boldSystemFont(ofSize: 16)
@@ -45,9 +48,7 @@ class WarehouseListTableViewController: UITableViewController {
         }
         
         cell.contentConfiguration = content
-//        cell.layer.borderWidth = 2
-//        //cell.layer.borderColor =
-        
+
         return cell
     }
 
@@ -89,7 +90,6 @@ class WarehouseListTableViewController: UITableViewController {
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let warehouseDetailedVC = segue.destination as? WarehouseDetailedViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
@@ -98,5 +98,29 @@ class WarehouseListTableViewController: UITableViewController {
         warehouseDetailedVC.item = item
     }
     
-
+    func animateTableView() {
+        tableView.reloadData()
+        
+        let cells = tableView.visibleCells
+        let tableVIewHeight = tableView.bounds.height
+        var delayForCells: Double = 0
+        
+        for cell in cells {
+            cell.transform = CGAffineTransform(translationX: tableVIewHeight, y: 0)
+            
+            UIView.animate(withDuration: 0.4,
+                           delay: delayForCells * 0.02,
+                           usingSpringWithDamping: 1,
+                           initialSpringVelocity: 1,
+                           options:  .curveEaseInOut,
+                           animations: {
+                cell.transform = CGAffineTransform.identity
+            },
+                           completion: nil)
+            delayForCells += 1
+        }
+    }
+    
 }
+
+

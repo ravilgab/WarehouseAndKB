@@ -128,8 +128,8 @@
 		F1E71EB826EE5A83009943DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F1E71EC826EE8723009943DB /* Contact.swift */,
 				F1DD97382729924000AEAA35 /* Item.swift */,
+				F1E71EC826EE8723009943DB /* Contact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
